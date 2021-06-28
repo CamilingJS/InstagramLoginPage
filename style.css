@@ -12,7 +12,7 @@ body {
 }
 
 .loginContainer {
-  width: 100%;
+  width: 375px;
   height: auto;
   background-color: white;
   display: flex;
@@ -39,11 +39,29 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  background-color: fuchsia;
+  justify-content: start;
   height: 18em;
   width: 96%;
 }
+.credentials input {
+  width: 80%;
+  height: 30px;
+  border-radius: .2em;
+  margin: 3px 0 3px 0; 
+}
+.credentials button {
+  width: 80%;
+  height: 30px;
+  background-color: #0395F6;
+  color: white;
+  border-radius: .2em;
+  border: none;
+}
+.or {
+  margin: 15px 0 15px 0; 
+  
+}
+
 
 .forgotPassword {
   background-color: brown;
