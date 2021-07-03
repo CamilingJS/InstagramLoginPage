@@ -200,13 +200,13 @@ body {
 footer {
   width: 100%;
   height: 9.7em;
-  position: absolute; 
   bottom: 0; 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  transform: translateY(120px);
 }
 footer a {
   font-family: Arial, Helvetica, sans-serif;
@@ -250,9 +250,11 @@ footer a {
 @media only screen and (min-width: 280px) {
   .loginContainer {
     height: auto;
+    width: auto;
   }
   .getTheApp {
     height: auto;
+    width: auto;
     margin-top: -50px;
   }
   footer {
@@ -260,6 +262,7 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+    width: auto;
   }
   .footerLinksContainer {
     display: flex;
@@ -269,7 +272,9 @@ footer a {
   }
   .languageCopywrite {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
+    width: auto;
   }
   .language,
   .copyRight {
@@ -287,6 +292,7 @@ footer a {
 @media only screen and (max-width: 320px) {
   .loginContainer {
     height: 450px;
+
   }
   
   .signUp {
@@ -308,6 +314,7 @@ footer a {
     background-color: white;
     border: 1.5px solid rgba(0, 0, 0, .1);
     height: 380px;
+    width: 375px;
   }
   .credentials {
     margin-bottom: -20px;
@@ -326,6 +333,7 @@ footer a {
   footer {
     width: 90%;
     background-color: #FAFAFA;
+    transform: translateY(200px);
   }
 }
 
@@ -356,10 +364,3 @@ footer a {
     flex-direction: column;
   }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-
